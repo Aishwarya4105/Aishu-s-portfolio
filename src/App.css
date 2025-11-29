@@ -173,7 +173,7 @@ body {
 }*/
 
 /* 📱 MOBILE RESPONSIVE (MEDIA QUERY) */
-@media (max-width:780px) {
+@media (max-width:768px) {
   .hero{
   display:inline-block;
   padding:30px 45px;
