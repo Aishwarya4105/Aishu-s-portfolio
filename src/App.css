@@ -188,8 +188,8 @@ body {
   }
 }
 .profile-img{
-  height: 250px;
-  width: 250px;
+  height:50%;
+  width: 50%;
   border-radius:60%;
 
 }
