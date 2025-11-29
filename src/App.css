@@ -133,44 +133,6 @@ body {
   font-size: 18px;
 }
 
-/* ANIMATED BUTTON */
-
-
-/* FEATURES SECTION */
-/*.features {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.features h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-}
-
-.card {
-  background: white;
-  padding: 20px;
-  width: 30%;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  transition: 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-}*/
-
-/* ✨ ANIMATION */
-/*@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}*/
 
 /* 📱 MOBILE RESPONSIVE (MEDIA QUERY) */
 @media (max-width:768px) {
@@ -186,12 +148,13 @@ body {
   .hero-subtitle {
     font-size: 16px;
   }
-}
+
 .profile-img{
-  height:50%;
-  width: 50%;
+  height: 75%;
+  width: 75%;
   border-radius:60%;
 
+}
 }
 
  /* .cards {
