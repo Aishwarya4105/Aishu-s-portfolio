@@ -173,11 +173,11 @@ body {
 }*/
 
 /* 📱 MOBILE RESPONSIVE (MEDIA QUERY) */
-@media (max-width: 768px) {
+@media (max-width:780px) {
   .hero{
   display:inline-block;
   padding:30px 45px;
-  width:80%;
+  margin-right: 50px;
 
 }
   .hero-title {
@@ -188,7 +188,12 @@ body {
     font-size: 16px;
   }
 }
+.profile-img{
+  height: 250px;
+  width: 250px;
+  border-radius:60%;
 
+}
 
  /* .cards {
     flex-direction: column;
