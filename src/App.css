@@ -21,21 +21,62 @@ body {
   padding: 15px 20px;
   background:linear-gradient(90deg,#6b63ff6e,#A084E8);
   color: white;
-  position: sticky;
+  position:fixed;
   top: 0;
   z-index: 10;
+  width: 100%;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
   gap: 20px;
+  padding-right: 100px;
 }
 
 .nav-links a {
   color: white;
   text-decoration: none;
 }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+  padding-right: 20px;
+  margin-right: 50px;
+}
+.hamburger span{
+  width: 25px;
+  height: 3px;
+  background:white;
+
+}
+@media(max-width:768px){
+ 
+  .nav-links{
+    position: absolute;
+    top:60px;
+    right: 0;
+    background:linear-gradient(90deg,#6b63ff6e,#A084E8);
+    color: black;
+    width: 200px;
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+    display: none;
+    box-shadow: 0px 4px 12px rgba(0,0);
+  }
+
+  .nav-links.open{
+    display: flex;
+  }
+  .hamburger{
+    display: flex;
+  }
+}
+
+
 
 
 /*.home-page {
@@ -68,6 +109,7 @@ body {
   text-align: center;
   justify-content: space-between;
   animation: fadeIn 1.2s ease-in-out;
+  margin-top: 100px;
 
 }
 .profile-img{
@@ -92,16 +134,6 @@ body {
 }
 
 /* ANIMATED BUTTON */
-.hero-btn {
-  padding: 12px 25px;
-  background: white;
-  color: #6a5acd;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
 
 
 /* FEATURES SECTION */
@@ -142,6 +174,12 @@ body {
 
 /* 📱 MOBILE RESPONSIVE (MEDIA QUERY) */
 @media (max-width: 768px) {
+  .hero{
+  display:inline-block;
+  padding:30px 45px;
+  width:80%;
+
+}
   .hero-title {
     font-size: 28px;
   }
@@ -149,8 +187,10 @@ body {
   .hero-subtitle {
     font-size: 16px;
   }
+}
 
-  .cards {
+
+ /* .cards {
     flex-direction: column;
     align-items: center;
   }
@@ -158,7 +198,7 @@ body {
   .card {
     width: 90%;
   }
-}
+}*/
 
 
 /*.about-page {
@@ -180,6 +220,7 @@ body {
   border-radius: 15px;
   text-align: center;
   margin-bottom: 40px;
+  margin-top: 100px;
 }
 
 .about-hero h1 {
@@ -261,6 +302,7 @@ body {
   border-radius: 15px;
   text-align: center;
   margin-bottom: 40px;
+   margin-top: 100px;
 }
 
 .edu-hero h1 {
@@ -272,14 +314,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+ 
 }
 
 .edu-card {
   background: white;
-  padding: 20px;
+  padding:15px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   transition: 0.3s ease;
+
 }
 
 .edu-card:hover {
@@ -289,7 +333,8 @@ body {
 /* Responsive */
 @media(max-width: 768px){
   .edu-card {
-    width: 100%;
+    width:90%;
+     margin:0 auto;
   }
 }
 
@@ -305,6 +350,7 @@ body {
   border-radius: 15px;
   text-align: center;
   margin-bottom: 40px;
+   margin-top: 100px;
 }
 
 /* CARDS */
