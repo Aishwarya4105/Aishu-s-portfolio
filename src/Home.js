@@ -27,7 +27,7 @@ export default function Home() {
         </p>
 
       <p>Always learing,always building.</p>
-        </div>
+      </div>
          <img src={image} className="profile-img"/>
       </section>
 
